@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="JCC.js" defer></script>
+    <script src="contact.js"></script>
+    <script src="https://kit.fontawesome.com/63466dc8ad.js" crossorigin="anonymous"></script>
+    <title>Contact page</title>
+</head>
+<body>
+    
+    <section class="head">
+        <nav>
+            <a href="Jcc.html" > <img src="../Group 2.png" alt="?"></a>
+            <div class="nav" id="navlink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="Jcc.html">Home</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>
+                Would you love to learn more about our events or schedule a booking date and payment ? 
+                <br>
+                We’d love to hear from you too Leave your contact details on the form to send us a message 
+                <br>
+                and We will respond as soon as possible.
+            </p>
+
+            <a class="btn" href="#contact-name">Message us</a></span>
+            
+        </div>
+   </section>
+
+   <div class="contact-container">
+        <form>
+            <i class="fa fa-paper-plane"></i>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone number</label>
+                <input type="tel" placeholder="123 456 789" id="contact-phone" onkeyup="validateNumber()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email address</label>
+                <input type="email" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Your message</label>
+                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMssg()"></textarea>
+                <span id="message-error"></span>
+            </div>
+
+            <div class="contact-method">
+                <input type="radio" name="method" id="dot-1">
+                <input type="radio" name="method" id="dot-2">
+                <span class="Prefer">Preferred Method of Contact</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot-contact one"></span>
+                        <span class="method">Email</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot-contact two"></span>
+                        <span class="method">Phone</span>
+                    </label>
+                </div>
+            </div>
+            <button onclick="return validateForm()">Submit</button>
+            <span id="submit-error"></span>
+        </form>
+   </div>
+   
+
+   <footer>
+
+    <div class="container">
+        <div class="company">
+           <ul class="footer-logo">
+            <li><img src="../Group 2.png" alt="?"></li>
+            <li class="a"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="a"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="a"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="a"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+           </ul>
+        </div>
+        <div class="about-footer">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="Jcc.html">homepage</a></li>
+                <li><a href="#">pricing</a></li>
+
+            </ul>
+
+        </div>
+        <div class="contact-info">
+            <h2>Contact us</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>Jl. Slipi Petamburan<br>
+                    Jakarta Pusat, 10450<br>Indonesia</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:0213147806">(021) 3147806</a><br>
+                    <a href="tel:0213147806">(021) 3147806</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:JCC@gmail.com">JCC@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   </footer>
+
+   <div class="copyright">
+    <p>Copyright © 2023 JCC. All Rights Reserved.</p>
+   </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
